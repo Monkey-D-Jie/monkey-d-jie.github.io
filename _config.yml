@@ -11,8 +11,8 @@ github_repo: "https://github.com/Monkey-D-Jie/Monkey-D-Jie.github.io" # you code
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "上帝给了我一双黑色的眼，我要用它来寻找新的光明"
+sidebar-avatar: /img/I01051606.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
