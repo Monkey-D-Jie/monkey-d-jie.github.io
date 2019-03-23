@@ -63,8 +63,8 @@ kramdown:
 gitalk:
   #是否开启Gitalk评论
   enable: true   
-  clientID: 52f35d5f6f693b441d90                            #生成的clientID
-  clientSecret: 0b5d070d714896d31192df58a95c11349fca9969    #生成的clientSecret
+  clientID: aaad3b1012a76a02dc04 #生成的clientID
+  clientSecret: deec86533c113349d80f2f536c9819556735b155 #生成的clientSecret
   repo: monkey-d-jie.github.io    #仓库名称
   owner: Monkey-D-Jie   #github用户名
   admin: Monkey-D-Jie
