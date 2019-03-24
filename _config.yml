@@ -1,10 +1,10 @@
 # Site settings
-title: 码文记事中心
+title: 码文记事驿站
 SEOTitle: 蒙奇君杰的博客
 header-img: img/post-bg-desk.jpg
 email: liuyujunqi@163.com
 description: "Every failure is leading towards success."
-keyword: "博客, BY Blog, 老王, 蒙奇君杰, 王杰, 横杠青年, Apple, iPhone"
+keyword: "博客, BY Blog, 老王, 蒙奇君杰, 王杰, 斜杠青年"
 url: "http://monkey-d-jie.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Monkey-D-Jie/Monkey-D-Jie.github.io" # you code repository
@@ -103,7 +103,7 @@ friends: [
         title: "WY",
         href: "http://zhengwuyang.com"
     },{
-        title: "简书·BY",
+        title: "简书",
         href: "http://www.jianshu.com"
     },{
         title: "Apple",
