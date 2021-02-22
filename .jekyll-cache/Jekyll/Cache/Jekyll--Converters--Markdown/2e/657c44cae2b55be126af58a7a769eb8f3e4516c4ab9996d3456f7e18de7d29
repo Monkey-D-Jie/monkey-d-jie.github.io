@@ -1,0 +1,18 @@
+I"�<h2 id="序言">序言</h2>
+<blockquote>
+  <p>2021年2月22日22:12:39 更新
+本片帖子主要是为了记录在工作中用到的Java8的一些技巧，网络上有很多相关的资料。自己在这里记录下来，主要是为了方便查阅。</p>
+</blockquote>
+
+<h4 id="1集合操作类">1.集合操作类</h4>
+<blockquote>
+  <p>获取到某一个对象型集合中的某一个属性的集合
+代码片段如下。其中distinct()为可选项，意思是去重。</p>
+</blockquote>
+
+<pre><code class="language-stylus">List&lt;String&gt; stIdList2 = stuList.stream()
+				.map(Student::getId).distinct()
+				.collect(Collectors.toList());
+</code></pre>
+
+:ET

@@ -1,0 +1,15 @@
+I"b<h2 id="序言">序言</h2>
+<blockquote>
+  <p>2021年2月22日22:50:39 更新
+本片帖子主要是为了记录在工作中常用的docker命令，主要是为了方便查阅。</p>
+</blockquote>
+
+<h3 id="1常规命令">1.常规命令</h3>
+<blockquote>
+  <p>复制 docker cp xxxx xxxx</p>
+</blockquote>
+
+<p>  这个命令的作用，主要是应用在把docker容器中的关键信息类文件复制到docker所在的宿主机中的复制场景中。
+命令示例：docker cp 45cd5a74d37b(容器id):mdata/jf-isdms/logs(容器中的路径)       /usr/local/isdms-web（宿主机中的相对路径）</p>
+
+:ET

@@ -1,13 +1,14 @@
-I"�<p><img src="https://github.com/Monkey-D-Jie/MyBlogImageRepository/blob/master/testImg/ligth-tower.jpg?raw=true" alt="心向明灯，定会重生" /></p>
+I"�<p><img src="https://github.com/Monkey-D-Jie/MyBlogImageRepository/blob/master/testImg/ligth-tower.jpg?raw=true" alt="心向明灯，定会重生" /></p>
 <h2 id="序言">序言</h2>
 <blockquote>
-  <p>2020年12月05日16:43:04 重新更新
-本篇帖子的目的主要是为了记录自己在截止目前的项目开发工作中，redis在项目场景中的应用方法。以及一些踩过的坑。也算是做一次复习和回顾了（话说，这段时间怎么能这么冷啊 - -）。
-总的来说，我这边用到的Redis的地方，主要是分为了4类，包括常规缓存，统计在线人数，限流，使用排它锁来达到续期令牌的目的等。</p>
+  <p>2020年12月05日16:43:04 重新更新</p>
 </blockquote>
 
-<p>&lt;/br&gt;redis版本：spring-data-redis:2.1.5.RELEASE
-&lt;/br&gt;项目构建方式：build.gradle</p>
+<p>本篇帖子的目的主要是为了记录自己在截止目前的项目开发工作中，redis在项目场景中的应用方法。以及一些踩过的坑。也算是做一次复习和回顾了（话说，这段时间怎么能这么冷啊 - -）。总的来说，我这边用到的Redis的地方，主要是分为了4类，包括常规缓存，统计在线人数，限流，使用排它锁来达到续期令牌的目的等。</p>
+<blockquote>
+  <p>redis版本：spring-data-redis:2.1.5.RELEASE
+<br />项目构建方式：build.gradle</p>
+</blockquote>
 
 <h3 id="1常规缓存">1.常规缓存</h3>
 <p>一个项目中，总会存在些低频变动的数据。而这些低频变动的数据，就特别适合放在缓存中。采用的策略即是为它们设置一个较长的过期时间（1h，6h，12h，24h，一周等），然后放在缓存中。当数据过期或者是数据库中的数据有更新的时候，再把重新拉取最新数据，并重置缓存。另一方面，这种缓存数据，也能减少不必要的资源消耗（能省一点儿是一点儿咯，毕竟蚊子肉也是肉嘛）。同时，也能提高相关接口的响应速度。</p>
@@ -42,5 +43,10 @@
 <blockquote>
   <p>利用排它锁，实现固定时间内的令牌刷新
 <img src="https://raw.githubusercontent.com/Monkey-D-Jie/Images/master/PicGo/redis-%E6%8E%92%E5%AE%83%E9%94%81%EF%BC%8C%E7%BB%AD%E6%9C%9F%E8%BA%AB%E4%BB%BD%E4%BB%A4%E7%89%8C.png" alt="把缓存过期作为一种锁来处理" /></p>
+</blockquote>
+
+<h3 id="5网络上摘录的好帖子">5.网络上摘录的好帖子</h3>
+<blockquote>
+  <p><a href="https://www.cnblogs.com/superfj/p/9232482.html">springboot之使用redistemplate优雅地操作redis</a></p>
 </blockquote>
 :ET
